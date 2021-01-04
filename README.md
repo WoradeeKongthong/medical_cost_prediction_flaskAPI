@@ -12,13 +12,13 @@ ANN = 4372
 
 I selected the Random Forest model to do the deployment.  
   
-===============================================================
+===============================================================  
 Deployment details  
 - create API with Flask
 - containerization with Docker
+- (optional) pull my uploaded docker repository  
 
-
-===============================================================
+===============================================================  
 # How to use the ML model
 (after you clone or download the project
 and install the required libraries in requirements.txt)
@@ -26,17 +26,17 @@ and install the required libraries in requirements.txt)
 ## Flask application
 1. in your terminal, cd to the project
 2. start the flask api with command `$ python app.py`
-3. use the api from the following options
-	3.1 type the url in the browser
-		- visit the home page at http://0.0.0.0:8000/
-		- make a prediction from entered information at http://0.0.0.0:8000/predict?age=33&sex=female&bmi=18.36&children=0&smoker=no&region=southeast
-	3.2 using Postman app
-		- predict from GET http://0.0.0.0:8000/predict and specify the parameters age, sex, bmi, children, smoker and region in Params tab
-		- predict from csv file from POST http://0.0.0.0:8000/predict_file, select Body tab, select form-data, specify key as the word file, and select the csv file.
-		- predict from json input from POST http://0.0.0.0:8000/predict_json/, select Body tab, select raw JSON and type the input list such as [33,"female",18.36,0,"no","southeast"]
-	3.3 using curl 
-		- open terminal
-		- type `curl --location --request POST '0.0.0.0:8000/predict_json/' --header 'Content-Type: application/json' --data-raw '[33,"female",18.36,0,"no","southeast"]'`
+3. use the api from the following options  
+	3.1 type the url in the browser  
+		- visit the home page at http://0.0.0.0:8000/  
+		- make a prediction from entered information at http://0.0.0.0:8000/predict?age=33&sex=female&bmi=18.36&children=0&smoker=no&region=southeast  
+	3.2 using Postman app  
+		- predict from GET http://0.0.0.0:8000/predict and specify the parameters age, sex, bmi, children, smoker and region in Params tab  
+		- predict from csv file from POST http://0.0.0.0:8000/predict_file, select Body tab, select form-data, specify key as the word file, and select the csv file.  
+		- predict from json input from POST http://0.0.0.0:8000/predict_json/, select Body tab, select raw JSON and type the input list such as [33,"female",18.36,0,"no","southeast"]  
+	3.3 using curl   
+		- open terminal  
+		- type `curl --location --request POST '0.0.0.0:8000/predict_json/' --header 'Content-Type: application/json' --data-raw '[33,"female",18.36,0,"no","southeast"]'`  
 
 ## Docker container
 1. open your terminal, cd to the project
