@@ -49,3 +49,11 @@ and install the required libraries in requirements.txt)
 ## Pull my uploaded docker repository
 1. pull the repository with command `$ docker pull woradee/medical_cost:simple`
 2. run the image with command `$ docker run -p 8000:8000 woradee/medical_cost:simple`
+
+## use my ML model API on Heroku
+Use the api as the step 3 in Flas application section above,  
+but change the url from http://0.0.0.0:8000 to https://medical-cost-flaskapi.herokuapp.com/
+
+## use my ML model API on GCP
+Use the api as the step 3 in Flas application section above,  
+but change the url from http://0.0.0.0:8000 to https://medical-cost-flaskapi.et.r.appspot.com
