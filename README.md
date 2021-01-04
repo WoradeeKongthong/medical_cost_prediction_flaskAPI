@@ -1,14 +1,14 @@
-After I did the data analysis and build ML models in  
+After I did the data analysis and built ML models in  
 https://github.com/WoradeeKongthong/medical_cost_regression,  
 
 The RMSE of each model is as following :  
-Multiple Linear Regression = 5486
-Polynomial Regression = 4610
-SVR = 4524
-Decision Tree = 4791
-Random Forest = 4082
-XGBRegression = 5301
-ANN = 4372
+Multiple Linear Regression = 5486  
+Polynomial Regression = 4610  
+SVR = 4524  
+Decision Tree = 4791  
+Random Forest = 4082  
+XGBRegression = 5301  
+ANN = 4372  
 
 I selected the Random Forest model to do the deployment.  
   
